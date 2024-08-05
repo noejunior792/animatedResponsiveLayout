@@ -1,11 +1,11 @@
 import 'models.dart';
 
 final User user_0 = User(
-    name: const Name(first: 'Me', last: ''),
+    name: const Name(first: 'Noé', last: 'Júnior'),
     avatarUrl: 'assets/avatar_1.png',
     lastActive: DateTime.now());
 final User user_1 = User(
-    name: const Name(first: '老', last: '强'),
+    name: const Name(first: 'Tim', last: 'Last'),
     avatarUrl: 'assets/avatar_2.png',
     lastActive: DateTime.now().subtract(const Duration(minutes: 10)));
 final User user_2 = User(
@@ -25,29 +25,29 @@ final List<Email> emails = [
   Email(
     sender: user_1,
     recipients: [],
-    subject: '豆花鱼',
-    content: '最近忙吗？昨晚我去了你最爱的那家饭馆，点了他们的特色豆花鱼，吃着吃着就想你了。',
+    subject: 'Project Timeline',
+    content: 'Hey team, I noticed that we might be behind on our project timeline. Can we discuss how we can get back on track?',
   ),
   Email(
     sender: user_2,
     recipients: [],
-    subject: 'Dinner Club',
+    subject: 'Feature Implementation',
     content:
-        "I think it's time for us to finally try that new noodle shop downtown that doesn't use menus. Anyone else have other suggestions for dinner club this week? I'm so intrigued by this idea of a noodle restaurant where no one gets to order for themselves - could be fun, or terrible, or both :)\n\nSo",
+        "I've been thinking about the new feature we're planning to implement. I have a few ideas on how we can streamline the process. Let's have a meeting to discuss this in detail.",
   ),
   Email(
       sender: user_3,
       recipients: [],
-      subject: 'This food show is made for you',
+      subject: 'UI Design Feedback',
       content:
-          "Ping– you'd love this new food show I started watching. It's produced by a Thai drummer who started getting recognized for the amazing vegan food she always brought to shows.",
+          "Hi all, I've attached a screenshot of the latest UI design for our project. Please review and provide your feedback. Looking forward to your thoughts!",
       attachments: [const Attachment(url: 'assets/thumbnail_1.png')]),
   Email(
     sender: user_4,
     recipients: [],
-    subject: 'Volunteer EMT with me?',
+    subject: 'Volunteer Developers',
     content:
-        'What do you think about training to be volunteer EMTs? We could do it together for moral support. Think about it??',
+        'We could use some extra hands for our project. Do you know anyone who might be interested in volunteering as a developer for a few weeks?',
   ),
 ];
 
@@ -58,9 +58,9 @@ final List<Email> replies = [
       user_3,
       user_2,
     ],
-    subject: 'Dinner Club',
+    subject: 'Feature Implementation',
     content:
-        "I think it's time for us to finally try that new noodle shop downtown that doesn't use menus. Anyone else have other suggestions for dinner club this week? I'm so intrigued by this idea of a noodle restaurant where no one gets to order for themselves - could be fun, or terrible, or both :)\n\nSo",
+        "I agree, we need to streamline our process. Let's schedule a meeting to go over your ideas. I'm available tomorrow afternoon. Does that work for everyone?",
   ),
   Email(
     sender: user_0,
@@ -68,8 +68,8 @@ final List<Email> replies = [
       user_3,
       user_2,
     ],
-    subject: 'Dinner Club',
+    subject: 'Feature Implementation',
     content:
-        "Yes! I forgot about that place! I'm definitely up for taking a risk this week and handing control over to this mysterious noodle chef. I wonder what happens if you have allergies though? Lucky none of us have any otherwise I'd be a bit concerned.\n\nThis is going to be great. See you all at the usual time?",
+        "I'm excited to hear your ideas for the new feature. Tomorrow afternoon works for me as well. Let's make sure we have a clear agenda so we can make the most of our time.",
   ),
 ];
