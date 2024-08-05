@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'animations.dart';
 import 'models/data.dart' as data;
 import 'models/models.dart';
-import 'transitions/list_detail_transition.dart';          // Add import
+import 'transitions/list_detail_transition.dart';
 import 'widgets/animated_floating_action_button.dart';
 import 'widgets/disappearing_bottom_navigation_bar.dart';
 import 'widgets/disappearing_navigation_rail.dart';
 import 'widgets/email_list_view.dart';
-import 'widgets/reply_list_view.dart';                     // Add import
+import 'widgets/reply_list_view.dart';
 
 void main() {
   runApp(const MainApp());
@@ -106,7 +106,6 @@ class _FeedState extends State<Feed> with SingleTickerProviderStateMixin {
               Expanded(
                 child: Container(
                   color: _backgroundColor,
-                                                // Update from here ...
                   child: ListDetailTransition(
                     animation: _railAnimation,
                     one: EmailListView(
@@ -120,7 +119,6 @@ class _FeedState extends State<Feed> with SingleTickerProviderStateMixin {
                     ),
                     two: const ReplyListView(),
                   ),
-                                                // ... to here.
                 ),
               ),
             ],
